@@ -73,10 +73,10 @@ public class QuestionsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            this.cbCates.setItems(FXCollections.observableList(Configs.cateServices.getCates()));
+            this.cbCates.setItems(FXCollections.observableList(Configs.cateServices.list()));
             this.cbLevels.setItems(FXCollections.observableList(Configs.levelServices.getLevels()));
             
-            this.cbSearchCates.setItems(FXCollections.observableList(Configs.cateServices.getCates()));
+            this.cbSearchCates.setItems(FXCollections.observableList(Configs.cateServices.list()));
             this.cbSearchLevels.setItems(FXCollections.observableList(Configs.levelServices.getLevels()));
             
             this.loadColumns();

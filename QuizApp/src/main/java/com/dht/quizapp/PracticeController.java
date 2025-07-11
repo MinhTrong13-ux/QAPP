@@ -50,7 +50,7 @@ public class PracticeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            this.cbSearchCates.setItems(FXCollections.observableList(Configs.cateServices.getCates()));
+            this.cbSearchCates.setItems(FXCollections.observableList(Configs.cateServices.list()));
             this.cbSearchLevels.setItems(FXCollections.observableList(Configs.levelServices.getLevels()));
             
         } catch (SQLException ex) {
